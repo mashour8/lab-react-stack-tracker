@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+.company{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.company-group{
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+
+}
+
+.company-detials{
+  display: flex;
+  gap: 12.75rem;
+  flex-direction: row;
+
+}
+
+.company-detials-img{
+  max-width: '20%' !important;
+  max-height: '20%' !important;
+  
+}
+
+.techs{
+  display: flex;
+  margin-top: 200px;
+  flex-direction: row;
+  gap: 3rem;
+}
