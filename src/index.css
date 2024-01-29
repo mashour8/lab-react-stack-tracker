@@ -8,6 +8,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
 }
 
 a {
@@ -20,11 +21,21 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  /* margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
+  /* overflow: hidden;     */
+
+  box-sizing: border-box;
+  color: #292929;
+  background-color: #f3f4f6;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+
+
 }
 
 h1 {
@@ -61,23 +72,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.Navbar {
-  display: flex;
-  justify-content: space-between;
-  background: #352275;
-  padding: 5px 20px;
-  color: #ffffff;
-  
-}
-
-.Navbar li,
-.Navbar a {
-  list-style: none;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0px 20px;
-  font-size: 1.2rem;
-  color: white;
 }

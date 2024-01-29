@@ -1,11 +1,19 @@
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function TechnologyPage(props) {
-  const { slug } = useParams();
+  const location = useLocation();
+  const { from } = location.state;
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const slug = searchParams.get("techId");
+  console.log("Getting : oldUrl : ", slug);
+
+  // const { slug } = useParams();
+
   let findTech = props.techs.find((tech) => {
     return tech.slug === slug;
   });
-  console.log("findTech", findTech);
   return (
     <div>
       <h1>Technology Details</h1>
@@ -22,6 +30,9 @@ function TechnologyPage(props) {
           <p>{findTech.description}</p>
         </div>
       </div>
+      <a href={`/company?companyId=${from}`}>
+        <button>back</button>
+      </a>
     </div>
   );
 }

@@ -22,11 +22,11 @@ function App() {
           element={<HomePage companies={companies}></HomePage>}
         ></Route>
         <Route
-          path="/company/:companySlug"
+          path="/company"
           element={<CompanyPage companies={companies}></CompanyPage>}
         ></Route>
         <Route
-          path="/tech/:slug"
+          path="/tech"
           element={<TechnologyPage techs={techs}></TechnologyPage>}
         ></Route>
       </Routes>
